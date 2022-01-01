@@ -1,0 +1,16 @@
+﻿@model Mobil[];
+
+<div class="card p-4">
+    <h1>Mobil @ViewBag.namaSaya</h1>
+    <hr />
+    @foreach (var item in Model)
+    {
+    <div class="card shadow-lg p-4 m-2 text-center">
+        <p>@item.IdRegistrasi</p>
+        <p>@item.Tipe</p>
+        <p>@item.Merk</p>
+        <p>@item.Varian</p>
+    </div>
+    }
+    
+</div>
